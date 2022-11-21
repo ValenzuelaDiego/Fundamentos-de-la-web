@@ -1,0 +1,82 @@
+<!--Documento creado por Diego Valenzuela Bernal el 21/11/2022. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+
+<form action="/process" method="post">
+<!-- action: define la ubicacion URL en donde se enviaran los datos que el formulario ha recopilado-->
+<!-- method: define con que metodo HTTP se envian los datos, generalmente get o post.-->
+
+<!--Primeramente creamos la seccion en donde se piden los datos-->
+<div><!-- Seccion en donde pide el nombre-->
+    <label>First Name:* </label>
+    <input type="text" name="first_name" placeholder="Your first name is...">
+</div>
+<div><!-- Seccion en donde pide el apellido-->
+    <label>Last Name:* </label>
+    <input type="text" name="last_name" placeholder="Your last name is...">
+</div>
+<div><!-- Seccion en donde pide el mail-->
+    <label>Email Adress:* </label>
+    <input type="email" name="email" placeholder="Your Email is...">
+</div>
+<div><!-- Seccion en donde pide la contrasenha-->
+    <label>Password:* </label>
+    <input type="password" name="password" placeholder="Your Password is...">
+</div>
+<div><!-- Seccion en donde pide la confirmacion de la contrasenha-->
+    <label>Confirm Password:* </label>
+    <input type="password" name="confirm_password" placeholder="Your Password is...">
+</div>
+<div><!-- Seccion en donde pide la fecha de cumpleanhos-->
+    <label>Birthday: </label>
+    <input type="date" name="birthday" placeholder="mm/dd/yyyy">
+</div>
+<div><!-- Seccion en donde pide la identidad de genero-->
+    <label>Gender Identity: </label>
+</div>
+<div>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="bold">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="normal">Female</label>
+    <input type="radio" name="gender" value="non_binary" id="non_binary">
+    <label for="normal">Non-binary</label>
+    <input type="radio" name="gender" value="prefer_not_answer" id="prefer_not_answer">
+    <label for="normal">I prefer not to answer</label>
+</div>
+<div><!-- Seccion en donde pide una breve descripcion de si mismo-->
+    <label>A short description about myself: </label>
+</div>
+<div>
+    <textarea name="description_about_myself" cols="20" rows="3"></textarea>
+</div>
+<div><!-- Seccion en donde pregunta la el lenguaje preferido-->
+    <label>Favorite Lenguage: </label>
+    <select name="favorite_lenguage">
+        <option>JavaScript</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>C</option>
+        <option>C++</option>
+    </select>
+</div>
+<div><!-- seccion en donde pregunta si estas o no de acuerdo-->
+    <input type="checkbox" name="accept" id="accept">
+    <label>Yes, I would like to receive periodic email updates</label>
+</div>
+<div><!-- aqui se pone el teclado para enviar-->
+    <input type="submit" value="Create Account">
+</div>
+<div>
+    <label>* Indicates a requiered field</label>
+</div>
+</form>
+</body>
+</html>
