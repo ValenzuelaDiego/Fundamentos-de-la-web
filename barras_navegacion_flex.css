@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    width: 1000px;
+    height: 60px;
+    background-color: grey;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    color: white;
+    justify-content: center;
+    /*font-family: ro;*/
+}
+.nav-links {
+    width: 450px;
+    height: auto;
+    color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links .btn{
+    height: 25px;
+    color: white;
+    background-color: #17a2b8;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 2px 2px black;
+}
